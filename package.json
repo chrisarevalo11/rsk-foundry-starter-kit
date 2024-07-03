@@ -1,0 +1,23 @@
+{
+  "name": "rsk-foundry-starter-kit",
+  "version": "1.0.0",
+  "description": "Rootsotck Foundry Starter kit.",
+  "author": "Christian Arevalo",
+  "license": "MIT",
+  "files": [
+    "src/**/*.sol"
+  ],
+  "scripts": {
+    "setup": "make clean && make build",
+    "sync": "make update",
+    "test": "make test",
+    "snapshot": "make snapshot",
+    "format": "make format",
+    "lint": "make lint",
+    "all": "make all"
+  },
+  "devDependencies": {
+    "prettier": "^3.3.2",
+    "prettier-plugin-solidity": "^1.3.1"
+  }
+}
