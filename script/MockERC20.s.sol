@@ -13,9 +13,7 @@ contract MockERC20Script is Script {
 
     vm.startBroadcast(privateKey);
 
-    MockERC20 token = new MockERC20("RSKToken", "RSK", account);
-
-    token.mint(account, 500);
+    new MockERC20("RSKToken", "RSK", account);
 
     vm.stopBroadcast();
   }
