@@ -115,6 +115,12 @@ PRIVATE_KEY=''
 
 2. Get your RPC url. The RPC url can be for mainnet or testnet, depending on where you want to deploy. To get your private RPC url go to the [Rootstock RPC API docs](https://rpc.rootstock.io/).
 
+3. Indicate that your usnig `.env` file.
+
+```bash
+source .env
+```
+
 ## Example flow
 
 This is an example flow to deploy an ERC20 token to a public network and interact with it.
@@ -133,6 +139,9 @@ forge script script/MockERC20.s.sol:MockERC20 --broadcast --legacy --rpc-url $RS
 
 > [!NOTE]
 > You can remove the `--broadcast` flag if you wan to simulate the transaction locally. Also, the `--legacy` flag is required for supporting EIP-1159.
+
+> [!TIP]
+> If you get an error like `Transaction dropped from the mempool: <tx-id>` check the tx-id in the explorer. The tx may have went successful but the error is still in the logs. Here are the [mainnet](https://explorer.rootstock.io/) and [testnet](https://explorer.testnet.rootstock.io/) explorers.
 
 ## Final Comments
 
