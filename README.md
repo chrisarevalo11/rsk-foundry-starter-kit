@@ -115,7 +115,7 @@ PRIVATE_KEY=''
 
 2. Get your RPC url. The RPC url can be for mainnet or testnet, depending on where you want to deploy. To get your private RPC url go to the [Rootstock RPC API docs](https://rpc.rootstock.io/).
 
-3. Indicate that your usnig `.env` file.
+3. Indicate that your using `.env` file.
 
 ```bash
 source .env
